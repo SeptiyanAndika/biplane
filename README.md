@@ -46,7 +46,7 @@ The lower wing carries its own structural discipline: `/biplane-build` flies on 
 
 ### Stage 1 — `/biplane-spec <ISSUE-ID>`
 
-The upper wing. Fetches a Linear issue and rewrites it as a production-ready **Spec-Driven Development (SDD) spec** following [Martin Fowler's SDD model](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html).
+The upper wing. Fetches a Linear issue and rewrites it as a production-ready **behavioral spec** using a spec-first approach.
 
 It stays entirely at the **behavior and contract level** — no file paths, no framework names, no codebase assumptions. Its output is a living document structured in three layers:
 
