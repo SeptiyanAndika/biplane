@@ -42,69 +42,13 @@ The lower wing carries its own structural discipline: `/biplane-build` flies on 
 
 ---
 
-## The Three Pillars
-
-These three pillars form the backbone of the spec — moving from *what* the system does, to *how* it's built, to *how* we prove it works.
-
-### 1. Functional Specification
-
-Describes what the system should do from a user's perspective. Bridges the gap between high-level business goals and actual implementation.
-
-**Focus:** Features, workflows, and user interactions.
-
-| Element | Description |
-|---------|-------------|
-| User Stories & Use Cases | Scenarios of how different users interact with the system |
-| Requirements | "The system shall..." statements with observable outcomes |
-| Business Rules | Constraints or logic the system must follow |
-| Acceptance Criteria | GIVEN/WHEN/THEN — verifiable, unambiguous scenarios |
-
-**Goal:** Align all stakeholders on expected deliverables before coding begins.
-
----
-
-### 2. Technical Design
-
-Provides the blueprint for how the functional requirements will be realized — a roadmap for the engineering team.
-
-**Focus:** System architecture, data structures, and contracts.
-
-| Element | Description |
-|---------|-------------|
-| System Architecture | Infrastructure, integrations, and technology decisions |
-| Data Models | Database schemas, entity relationships, data flow |
-| API Definitions | Endpoint structures, request/response formats |
-| Error Handling | Status codes, failure modes, retry safety |
-| Security & Config | Auth protocols, env vars, performance constraints |
-
-**Goal:** Give developers clear, unambiguous instructions — minimize ambiguity, minimize technical debt.
-
----
-
-### 3. Testing Strategy
-
-Outlines the methodology for verifying the product meets both functional and technical requirements.
-
-**Focus:** Confidence that the software is fit for purpose.
-
-| Level | What it tests |
-|-------|--------------|
-| Unit | Individual logic in isolation |
-| Integration | Component boundaries and how modules interact |
-| System / E2E | The complete flow in a production-like environment |
-| Acceptance (UAT) | End-user confirmation the product meets business needs |
-
-**Goal:** Gain confidence in quality before a single line of production code ships.
-
----
-
 ## How It Works
 
 ### Stage 1 — `/biplane-spec <ISSUE-ID>`
 
 The upper wing. Fetches a Linear issue and rewrites it as a production-ready **behavioral spec** using a spec-first approach.
 
-It stays entirely at the **behavior and contract level** — no file paths, no framework names, no codebase assumptions. Its output is a living document structured in three layers:
+It stays entirely at the **behavior and contract level** — no file paths, no framework names, no codebase assumptions. Its output is a living document structured in three layers — moving from *what* the system does (Functional Specification), to *how* it's built (Technical Design), to *how* we prove it works (Testing Strategy):
 
 | Layer | Content | Question answered |
 |-------|---------|-------------------|
